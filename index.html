@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Midterm</title>
+</head>
+<body onload="Load()">
+	<section>
+		<form style="height:130px;width:500px;border:1px solid black;">
+			<p style="width:80px;margin-top:-10px;margin-left:10px;background:white;">User Profile</p>
+			<div style="margin-top: 5px; margin-left: 5px;">Name: <input type="text" id="name"\></div>
+			<div style = "margin-top: 5px; margin-left: 5px;">Birthdate: <input type="date" id="birthdate"\></div>
+			<div style ="margin-top: 5px;">Gender: 
+				<select name="Gender" id="gender">
+				<option value = "Female"> Female </option>
+				<option value = "Male"> Male </option>
+			</select>
+		</div>
+			<button type="button" id="submit" style = "margin-top: 5px; margin-bottom: 5px;" onclick="myFunction()">Submit</button>
+		</form>
+		<div >
+			<table id="myTable" style="text-align: center;">
+				<tr>
+					<td>Name</td>
+					<td>Birthday</td>
+					<td>Age</td>
+					<td>Gender</td>
+					<td>Actions</td>
+				</tr>
+			</table>
+		</div>
+	</section>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
