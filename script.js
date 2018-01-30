@@ -40,9 +40,13 @@ function solve(b){
 }
 
 function edit(string){
-	var row = document.getElementById(string).item[0];
-	console.log(row);
+    var birth = document.getElementById('birthdate').value;
+    document.getElementById('myTable').rows[string.rowIndex].cells[0].innerHTML = document.getElementById('name').value;
+    document.getElementById('myTable').rows[string.rowIndex].cells[1].innerHTML = birth;
+    document.getElementById('myTable').rows[string.rowIndex].cells[2].innerHTML = solve(birth);
+    document.getElementById('myTable').rows[string.rowIndex].cells[3].innerHTML = document.getElementById('gender').value;
 }
 
 function remove(string){
+    document.getElementById('myTable').deleteRow(string.rowIndex);
 }
